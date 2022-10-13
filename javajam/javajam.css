@@ -1,12 +1,12 @@
 body {
-    background-image: url(../images/fadedroad50.jpg);
+    background-image: url(images/fadedroad50.jpg);
     background-repeat: no repeat;
     background-color: #FCEBB6;
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
 }
 
-head {
+header {
     color: #8C3826;
     background-color: #D2B48C;
     text-align: center;
