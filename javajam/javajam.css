@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(images/fadedroad50.jpg);
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-color: #FCEBB6;
@@ -9,19 +13,34 @@ body {
 }
 
 #wrapper {
-    min-width: 900px;
-    max-width: 1280px;
-    box-shadow: drop-shadow(5px 5px 5px#828282);
-    background-color: #FEFAEB;
+    width: 80%;
+    /*   box-shadow: drop-shadow(5px 5px 5px#828282); */
+    background-color: #231814;
     margin-right: auto;
     margin-left: auto;
+    padding: 0%;
 }
 
 header {
-    color: #8C3826;
+    color: #231814;
     background-color: #D2B48C;
-    text-align: center;
-    padding: 5px 0px 5px;
+    padding: 5px 200px 5px;
+    background-image: url(images/coffeelogo.jpg);
+    background-repeat: no-repeat;
+}
+
+header a :link {
+    text-decoration: none;
+    color: #231814;
+}
+
+header a :visited {
+    color: #231814;
+
+}
+
+header a :hover {
+    color: #fef6c2;
 }
 
 h1 {
@@ -40,29 +59,72 @@ h3 {
 h4 {
     background-color: #D2B48C;
     font-size: 1.2em;
-    padding: left 0.5em;
-    padding-bottom: 0.25em;
+    padding: 0em 0.5em;
+    border-bottom: #221811;
+    text-transform: uppercase;
+    clear: left;
 }
 
 nav {
-    text-align: center;
-    font-weight: bold;
+    /*     text-align: center; */
+    /*  font-weight: bold; */
     text-decoration: none;
     font-size: 1.5em;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    /*  padding-top: 5px;
+    padding-bottom: 5px; */
 }
 
 
 main {
-    padding: 2em 2em 2em;
+    padding: 0em 0em 2em;
     display: block;
+    margin: 0px 0px 15% 200px;
+    background-color: #fef6c2;
+    overflow: auto;
 }
+
+main h2 {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+main h3 {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+main h4 {
+    padding: 3em;
+    padding-right: 2em;
+}
+
+main p {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+main div {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+main ul {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+main dl {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+
+
 
 .details {
     padding-left: 20%;
     padding-right: 20%;
-
+    overflow: auto;
 }
 
 img {
@@ -74,9 +136,41 @@ img {
 #homehero {
     height: 300px;
     background-image: url(images/hero.jpg);
-    background-size: cover;
-    background-repeat: no repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
+
+#heromugs {
+    height: 300px;
+    background-image: url(images/heromugs.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#heroguitar {
+    height: 300px;
+    background-image: url(images/heroguitar.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#leftnav ul {
+    font-weight: bold;
+    float: left;
+    width: 200px;
+    margin: 0%;
+    padding: 2% 0% 1% 2%;
+    list-style-type: none;
+    height: 100%;
+    position: sticky;
+    overflow: auto;
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
 footer {
     background-color: #D2B48C;
     font-size: .60em;
@@ -86,10 +180,29 @@ footer {
     border-top: solid 2px #8C3826;
 }
 
+nav a:link {
+    color: #fef6c2;
+}
 
+nav a:visited {
+    color: #D2B48C;
+}
 
+nav a:hover {
+    color: #CC9933;
+}
 
+nav ul {
+    padding-left: 0px;
+}
 
+floatleft {
+    float: left;
+    float: right 2em;
+    padding-bottom: 0%;
+}
 
-
-
+onethird {
+    float: left;
+    width: 33%;
+}
