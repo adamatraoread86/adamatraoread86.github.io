@@ -3,30 +3,28 @@
 }
 
 body {
-    background-image: url(images/fadedroad50.jpg);
+    margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: #FCEBB6;
+    background-color: #D2B48C;
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
 }
 
 #wrapper {
-    width: 80%;
-    /*   box-shadow: drop-shadow(5px 5px 5px#828282); */
     background-color: #231814;
-    margin-right: auto;
-    margin-left: auto;
     padding: 0%;
 }
 
 header {
     color: #231814;
     background-color: #D2B48C;
-    padding: 5px 200px 5px;
-    background-image: url(images/coffeelogo.jpg);
+    padding: 5px 105px 5px;
+    background-image: url(images/cup.jpg);
     background-repeat: no-repeat;
+    height: 128px;
+
 }
 
 header a :link {
@@ -44,7 +42,7 @@ header a :hover {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Pacifico', cursive;
 }
 
@@ -66,26 +64,38 @@ h4 {
 }
 
 nav {
-    /*     text-align: center; */
-    /*  font-weight: bold; */
     text-decoration: none;
-    font-size: 1.5em;
-    /*  padding-top: 5px;
-    padding-bottom: 5px; */
 }
 
 
 main {
     padding: 0em 0em 2em;
     display: block;
-    margin: 0px 0px 15% 200px;
     background-color: #fef6c2;
-    overflow: auto;
 }
-main h2, h3, h4, p, div, ul, dl {
-    padding-left: 3em;
-    padding-right: 2em;
+
+main h2,
+h3,
+h4,
+p,
+div,
+dl {
+    padding-left: 1em;
+    padding-right: 1em;
 }
+
+main ul {
+    padding-left: 2em;
+}
+
+#mobile {
+    display: inline;
+}
+
+#destop {
+    display: none;
+}
+
 .details {
     padding-left: 20%;
     padding-right: 20%;
@@ -100,21 +110,21 @@ img {
 
 #homehero {
     height: 300px;
-    background-image: url(images/hero.jpg);
+    background-image: url(images/road.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #heromugs {
     height: 300px;
-    background-image: url(images/heromugs.jpg);
+    background-image: url(images/threemugs.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #heroguitar {
     height: 300px;
-    background-image: url(images/heroguitar.jpg);
+    background-image: url(images/guitar.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -159,15 +169,95 @@ nav a:hover {
 
 nav ul {
     padding-left: 0px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font: 1.25em;
 }
 
-floatleft {
-    float: left;
-    float: right 2em;
-    padding-bottom: 0%;
+nav li {
+    padding: 0.5em 1em;
+    width: 100%;
+    border-bottom: solid 1px;
 }
 
-onethird {
-    float: left;
-    width: 33%;
+@media(min-width: 600px) {
+    header {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    #homehero {
+        height: 50vh;
+        background-image: url(images/hero.jpg);
+    }
+
+    #heromugs {
+        background-image: url(images/heromugs.jpg);
+    }
+
+    #heroguitar {
+        background-image: url(images/heroguitar.jpg);
+    }
+
+    #flow {
+        flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #destop {
+        display: inline;
+    }
+
+    #details {
+        flex-direction: row;
+    }
+
+    h4 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media(min-width:1024px) {
+    .grid-container {
+        display: grid;
+        grid-template:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer"
+    }
+}
+
+#wrapper {
+    display: grid;
+    grid-template:
+        "header header"
+        "nav main"
+        "footer footer"
+        /200px;
+}
+nav ul{
+    flex-direction: column;
+}
+header{
+    background-image:url(images/coffeelogo.jpg) ;
 }
