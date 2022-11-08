@@ -106,6 +106,7 @@ main {
     display: block;
     padding: 0 0 2em 0;
 }
+
 h2,
 h3,
 h4,
@@ -171,10 +172,63 @@ footer {
     border-top: 2px solid #8C3826;
 }
 
+table {
+    margin: auto;
+    width: 90%;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+.altrow {
+    background-color: #D2B48E;
+}
+
+#herojobs {
+    height: 300px;
+    background-image: url(images/coffeecup.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input,
+textarea {
+    margin-bottom: .5em;
+}
+
 @media (min-width: 600px) {
     header {
         padding-left: 0;
         text-align: center;
+    }
+
+    @supports (display: grid) {
+        form {
+            display: grid;
+            grid-template-columns: 6em 1fr;
+            grid-gap: 1em;
+            gap: 1em;
+            width: 40%;
+        }
+
+        input[type="submit"] {
+            grid-column: 2 / 3;
+            width: 9em;
+        }
+
+        #herojobs {
+            background-image: url(images/herojobs.jpg);
+        }
     }
 
     h1 {
