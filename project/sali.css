@@ -140,7 +140,7 @@ img {
 }
 #yamoussoukro {
     height: 300px;
-    background-image: url(saliimages/yamoussoukro.jpg);
+    background-image: url(saliimages/yakro.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -288,12 +288,12 @@ textarea {
         border-bottom: none;
     }
     #abidjana {
-        background-image: url(saliimages/abidjana.jpg);
+        background-image: url(saliimages/abidjan.jpg);
         height: 50vh;
     }
 
     #yamoussoukro {
-        background-image: url(saliimages/yamoussoukroy.jpg);
+        background-image: url(saliimages/yakro.jpg);
     }
 
     #attiekea {
