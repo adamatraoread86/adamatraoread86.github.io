@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:white;
+    background-color: white;
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
     margin: 0;
@@ -16,8 +16,8 @@ body {
 }
 
 header {
-    background-color:silver;
-   background-image: url(saliimages/assinie.jpg);
+    background-color: silver;
+    background-image: url(saliimages/assinie.jpg);
     background-repeat: no-repeat;
     color: #231814;
     height: 128px;
@@ -25,6 +25,7 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 /* body {
     font-family: 'Roboto Mono', monospace;
 } */
@@ -120,30 +121,36 @@ dl {
     padding-left: 1em;
     padding-right: 1em;
 }
+
 main ul {
     padding-left: 2em;
 }
+
 .details {
     padding-left: 20%;
     padding-right: 20%;
     overflow: auto;
 }
+
 img {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 #abidjan {
     height: 300px;
     background-image: url(saliimages/abidjan.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 #yamoussoukro {
     height: 300px;
     background-image: url(saliimages/yakro.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 #attieke {
     height: 300px;
     background-image: url(saliimages/attieke.jpg);
@@ -157,18 +164,22 @@ img {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 #beachassinieb {
     height: 300px;
     background-image: url(saliimages/beachassinieb.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 #mobile {
     display: inline;
 }
+
 #desktop {
     display: none;
 }
+
 footer {
     background-color: #D2B48C;
     font-size: .60em;
@@ -177,116 +188,132 @@ footer {
     padding-bottom: 1em;
     border-top: 2px solid #8C3826;
 }
-footer li{
+
+footer li {
     display: inline;
     margin-right: 1em;
     font-size: 125%;
 }
+
 table {
     margin: auto;
     width: 90%;
     border-spacing: 0;
 }
-th,td{
+
+th,
+td {
     padding: 10px;
 }
-tr:nth-of-type(odd) { background-color: #D2B48E; }
+
+tr:nth-of-type(odd) {
+    background-color: #D2B48E;
+}
+
 form {
     display: flex;
     flex-direction: column;
     padding-left: 1em;
     width: 80%;
 }
+
 input,
 textarea {
     margin-bottom: .5em;
 }
 
- .header_top {
+.header_top {
     background: none repeat scroll 0 0 #F0F0E9;
-  }
-  
-  .contact infos ul li:first-child{
-      margin-left: -15px;
-      list-style-type: none;
-  }
-  .contact infos ul li a{
+}
+
+.contact infos ul li:first-child {
+    margin-left: -15px;
+    list-style-type: none;
+}
+
+.contact infos ul li a {
     font-size: 12px;
     color: #696763;
     font-family: 'Roboto', sans-serif;
-   /*  list-style: none; */
-  }
-  
-  
-.contact infos ul li a:hover{
-      background:inherit;
-     /*  list-style: none; */
-  } 
-  
-  
-  .social-icons ul li a {
+    /*  list-style: none; */
+}
+
+
+.contact infos ul li a:hover {
+    background: inherit;
+    /*  list-style: none; */
+}
+
+
+.social-icons ul li a {
     border: 0 none;
     border-radius: 0;
     color: #696763;
-    padding:1px;
-/* list-style: none; */
-  }
-   
-  
-  .social-icons ul li{
-      display:inline-block;
-      font-size: 50px;
-      list-style-type: none;
-  }
-  
-  .social-icons ul li a i {
+    padding: 1px;
+    /* list-style: none; */
+}
+
+
+.social-icons ul li {
+    display: inline-block;
+    font-size: 50px;
+    list-style-type: none;
+}
+
+.social-icons ul li a i {
     padding: 11px 15px;
-     transition: all 0.9s ease 0s;
-     -moz-transition: all 0.9s ease 0s;
+    transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
     -webkit-transition: all 0.9s ease 0s;
     -o-transition: all 0.9s ease 0s;
-   /*  list-style-type: none; */
-  }
-  
-  .social-icons ul li a i:hover{
+    /*  list-style-type: none; */
+}
+
+.social-icons ul li a i:hover {
     color: #fff;
-     transition: all 0.9s ease 0s;
-     -moz-transition: all 0.9s ease 0s;
+    transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
     -webkit-transition: all 0.9s ease 0s;
     -o-transition: all 0.9s ease 0s;
-  }
-  
-  
+}
+
+
 .fa-facebook:hover {
     background: #0083C9;
-  }
-  
- .fa-twitter:hover  {
-      background:#5BBCEC;
-  }
-  
-.fa-linkedin:hover  {
-      background:#FF4518;
-  } 
-  .social-icons{
-   /*  align-items: horizontal; */
+}
+
+.fa-twitter:hover {
+    background: #5BBCEC;
+}
+
+.fa-linkedin:hover {
+    background: #5bbcec;
+}
+
+.social-icons {
+    /*  align-items: horizontal; */
     list-style-type: none;
-  }
+}
+
 @media (min-width: 600px) {
     header {
         padding-left: 0;
         text-align: center;
     }
+
     h1 {
         font-size: 3em;
     }
+
     nav ul {
         flex-flow: row nowrap;
         justify-content: space-around;
     }
+
     nav li {
         border-bottom: none;
     }
+
     #abidjan {
         background-image: url(saliimages/abidjan.jpg);
         height: 50vh;
@@ -299,6 +326,7 @@ textarea {
     #attiekea {
         background-image: url(saliimages/attiekea.jpg);
     }
+
     #flow {
         display: flex;
         flex-direction: row;
@@ -321,38 +349,48 @@ textarea {
         margin-left: 10%;
         margin-right: 10%;
     }
-        form {
-            width: 40%;
-            display: grid;
-            grid-gap: 1em; gap: 1em;
-            grid-template-columns: 6em 1fr;
-        }
-        input[type="submit"] {
-            grid-column: 2 / 3;
-            width: 9em;
-        }
-#jacquevillej{
-    background-image: url(saliimages/jacqueville.jpg);
+
+    form {
+        width: 40%;
+        display: grid;
+        grid-gap: 1em;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 9em;
+    }
+
+    #jacquevillej {
+        background-image: url(saliimages/jacqueville.jpg);
+    }
+
+    #beachassinieb {
+        height: 300px;
+        background-image: url(saliimages/beachassinie.jpg);
+    }
 }
-#beachassinieb {
-    height: 300px;
-    background-image: url(saliimages/beachassinie.jpg);
-}
-}
+
 @media(min-width:1024px) {
     @supports(display: grid) {
         header {
             grid-area: header;
         }
+
         nav {
             grid-area: nav;
         }
+
         main {
             grid-area: main;
         }
+
         footer {
             grid-area: footer;
         }
+
         #wrapper {
             display: grid;
             grid-template:
@@ -361,9 +399,11 @@ textarea {
                 "footer footer"
                 /200px;
         }
+
         nav ul {
             flex-direction: column;
         }
+
         header {
             background-image: url(salilogo.png);
         }
