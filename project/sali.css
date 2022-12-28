@@ -80,6 +80,7 @@ nav {
 
 nav a {
     text-decoration: none;
+    padding-right: 10px;
 }
 
 .nav-item a {
@@ -100,13 +101,13 @@ nav a:hover {
 }
 
 nav ul {
-    display: flex;
+   display:flex; 
     flex-direction: column;
     font-size: 1.25em;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+} 
 
 nav li {
     border-bottom: 1px solid #FEF6C2;
@@ -114,6 +115,11 @@ nav li {
     width: 100%;
 }
 
+nav li {
+    display: inline;
+ /*    float: left; */
+} 
+ 
 main {
     background-color: white;
     display: block;
@@ -267,6 +273,7 @@ textarea {
     display: inline-block;
     font-size: 50px;
     list-style-type: none;
+    width: 10%;
 }
 
 .social-icons ul li a i {
