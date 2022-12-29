@@ -101,7 +101,7 @@ nav a:hover {
 }
 
 nav ul {
-   display:flex; 
+    display: flex;
     flex-direction: column;
     font-size: 1.25em;
     list-style-type: none;
@@ -117,9 +117,9 @@ nav li {
 
 nav li {
     display: inline;
- /*    float: left; */
-} 
- 
+    /*    float: left; */
+}
+
 main {
     background-color: white;
     display: block;
@@ -247,7 +247,7 @@ textarea {
 }
 
 .contact infos ul li a {
-    font-size: 12px;
+    font-size: 40px;
     color: #696763;
     font-family: 'Roboto', sans-serif;
     /*  list-style: none; */
@@ -264,7 +264,7 @@ textarea {
     border: 0 none;
     border-radius: 0;
     color: #696763;
-    padding: 1px;
+    padding: 10px;
     /* list-style: none; */
 }
 
@@ -291,6 +291,7 @@ textarea {
     -moz-transition: all 0.9s ease 0s;
     -webkit-transition: all 0.9s ease 0s;
     -o-transition: all 0.9s ease 0s;
+    padding: 20px;
 }
 
 
@@ -328,6 +329,8 @@ textarea {
 
     nav li {
         border-bottom: none;
+        display: inline;
+        padding-right: 10px;
     }
 
     #abidjan {
@@ -418,6 +421,11 @@ textarea {
 
         nav ul {
             flex-direction: column;
+        }
+
+        nav li {
+            display: inline;
+            padding-right: 10px;
         }
 
         header {
